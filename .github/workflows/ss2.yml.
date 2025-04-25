@@ -1,0 +1,11 @@
+name: Show IP
+
+on:
+  workflow_dispatch:
+
+jobs:
+  get-ip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get public IP
+        run: curl ifconfig.me
